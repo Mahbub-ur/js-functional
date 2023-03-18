@@ -7,6 +7,7 @@
     <title>JS Functionality</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -30,6 +31,16 @@
             </div>
         </div>
     </Section>
+    <section class="stopwatch">
+      <div class="time">
+        <h1 id="displayTime">00:00:00</h1>
+        <div class="buttons">
+          <i class="fa-regular fa-circle-stop" onclick="watchStop()"></i>
+          <i class="fa-regular fa-circle-play" onclick="watchStart()"></i>
+          <i class="fa-solid fa-rotate-left" onclick="watchReset()"></i>
+        </div>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>

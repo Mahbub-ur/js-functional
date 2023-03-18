@@ -8,6 +8,7 @@
     width: 300px;
     height: 150px;
     background-color: rgb(63, 63, 223);
+    display: inline-block;
 }
 .countdown .launch_time{
     display: flex;
@@ -26,4 +27,50 @@
     margin-bottom: 0;
     font-weight: 600;
     letter-spacing: 1px;
+}
+.stopwatch{
+    width: 300px;
+    height: 150px;
+    background-color: blue;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.stopwatch .time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.stopwatch .time h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+.stopwatch .time .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.stopwatch .time .buttons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+}
+.stopwatch .time .buttons i:hover{
+    background-color: blueviolet;
+}
+.stopwatch .time .buttons i:active{
+    color: aqua;
 }
